@@ -1,0 +1,32 @@
+.Tile {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(75, 75, 75);
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px 0px rgb(122, 122, 122);
+    // justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    img {
+        width: 4em;
+        height: 4em;
+    }
+}
+
+.indicatorImage {
+    border:1px solid rgb(139, 139, 139);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+        width: 1em;
+        height: 1em;
+        padding: 0.3em;
+    }
+}
+.imageContainer {
+    margin-right: 1em;
+}
