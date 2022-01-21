@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Tile } from '..';
+import { ListHeader, Tile } from '..';
 import axios from 'axios';
 import style from './style.module.css';
 
@@ -37,6 +37,7 @@ export default function List() {
         tokenDecimals: number;
     }
     return <div className={style.List}>
+        <ListHeader/>
         {ListOfChains && ListOfChains.map((item: itemType, index) => <Tile key={index} name={item.name} icon={item.icon} />)}
     </div>;
 }

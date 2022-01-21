@@ -1,4 +1,4 @@
-.Tile {
+.ListHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,35 +16,5 @@
   padding: 1em;
   margin-top: 1em;
   margin-bottom: 0.5em;
-}
-
-.Tile img {
-  width: 4em;
-  height: 4em;
-}
-
-.indicatorImage {
-  border: 1px solid #8b8b8b;
-  border-radius: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.indicatorImage img {
-  width: 1em;
-  height: 1em;
-  padding: 0.3em;
-}
-
-.imageContainer {
-  margin-right: 1em;
 }
 /*# sourceMappingURL=style.module.css.map */
