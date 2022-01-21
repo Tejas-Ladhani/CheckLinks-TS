@@ -23,7 +23,7 @@ export default function Tile(props: { icon: string; name: string }) {
 
                 </p>
             </div>
-        </Grid> 
+        </Grid>
     </div>;
 }
 
