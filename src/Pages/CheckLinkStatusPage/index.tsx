@@ -5,7 +5,7 @@ import { AppBar, List } from "../../Containers";
 
 export default function CheckLinkStatusPage() {
     // state for theme
-    const [dark, setDark] = useState<boolean>(true)
+    const [dark, setDark] = useState<boolean>(false)
 
     const theme = createTheme({
         palette: {
