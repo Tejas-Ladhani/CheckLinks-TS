@@ -4,8 +4,8 @@ import style from './style.module.css';
 import axios from "axios";
 
 // storing the path of PNGs of green & red symbol.
-const greenDotPath = "assets/greenDot.png";
-const redDotPath = "assets/redDot.png";
+const greenDotPath = "./assets/greenDot.png";
+const redDotPath = "./assets/redDot.png";
 
 export default function Tile(props: { icon: string; name: string }) {
 
