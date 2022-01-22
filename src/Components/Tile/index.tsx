@@ -2,10 +2,8 @@ import { Grid, Typography } from "@mui/material";
 import { useState, useEffect } from "react";
 import style from './style.module.css';
 import axios from "axios";
-
-// storing the path of PNGs of green & red symbol.
-const greenDotPath = "./assets/greenDot.png";
-const redDotPath = "./assets/redDot.png";
+import greenDot from './assets/greenDot.png';
+import redDot from './assets/redDot.png';
 
 export default function Tile(props: { icon: string; name: string }) {
 
@@ -51,7 +49,7 @@ export default function Tile(props: { icon: string; name: string }) {
             <Grid item xs={2}>
                 <div className={style.indicatorImage}>
                     {/* if Live : greenDot else RedDot */}
-                    <img src={isLive ? greenDotPath : redDotPath} />
+                    <img src={isLive ? greenDot : redDot} />
 
                     {/* if Live : up else Down */}
                     <p>  {isLive ? 'Up' : 'Down'}</p>
