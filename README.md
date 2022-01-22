@@ -10,7 +10,7 @@ There are many connections to different blockchain networks and in order to alwa
     <br />
     <a href="https://tejas-ladhani.github.io/CheckLinks-TS">View Application</a>
     ·
-    <a href="https://github.com/Tejas-Ladhani/Reactaagram/issues">Report Bug</a>
+    <a href="https://github.com/Tejas-Ladhani/CheckLinks-TS/issues">Report Bug</a>
     ·
   </p>
 </p>
