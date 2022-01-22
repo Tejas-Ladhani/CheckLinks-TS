@@ -1,7 +1,12 @@
 import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
+import { useState } from 'react';
 
-export default function ThemeSwitchBtn() {
+export default function ThemeSwitchBtn(props: {
+    dark: boolean;
+    setDark: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
+    const [toggle, setToggle] = useState<boolean>(props.dark);
     const MaterialUISwitch = styled(Switch)(({ theme }) => ({
         width: 62,
         height: 34,
@@ -48,5 +53,5 @@ export default function ThemeSwitchBtn() {
             borderRadius: 20 / 2,
         },
     }));
-    return <MaterialUISwitch  sx={{ m: 1 }} defaultChecked onChange={()=>console.log("switched")} />;
+    return <Switch sx={{ m: 1 }}  onChange={() => {props.setDark(!(props.dark));setToggle(!toggle)}} />;
 }

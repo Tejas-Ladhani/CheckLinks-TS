@@ -1,0 +1,31 @@
+.List {
+  margin-right: 8%;
+  margin-left: 8%;
+  margin-top: 1em;
+  -webkit-box-shadow: 1px 1px 1px #b9b9b9;
+          box-shadow: 1px 1px 1px #b9b9b9;
+}
+
+.ListContainer {
+  min-height: 75vh;
+  max-height: 75vh;
+  overflow-y: auto;
+  padding-right: 0.4em;
+  padding-left: 0.4em;
+}
+
+.ListContainer::-webkit-scrollbar {
+  width: 9px;
+  height: 12px;
+}
+
+.ListContainer::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+}
+
+.ListContainer::-webkit-scrollbar-thumb:vertical {
+  height: 0.6em;
+  background-color: #949494;
+  /* opacity: 0.4; */
+}
+/*# sourceMappingURL=style.module.css.map */

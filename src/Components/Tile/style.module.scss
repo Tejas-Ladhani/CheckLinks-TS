@@ -4,7 +4,6 @@
     border: 1px solid rgb(75, 75, 75);
     border-radius: 5px;
     box-shadow: 1px 1px 9px 0px #7a7a7a;
-    // justify-content: space-between;
     align-items: center;
     padding: 1em;
     margin-top: 1em;
@@ -17,7 +16,7 @@
 }
 
 .indicatorImage {
-    border:1px solid rgb(139, 139, 139);
+    border:1px solid rgb(196, 196, 196);
     border-radius: 3px;
     display: flex;
     flex-direction: row;
@@ -30,4 +29,9 @@
 }
 .imageContainer {
     margin-right: 1em;
+}
+@media only screen and (max-width: 768px) {
+    p{
+        display: none;
+    }
 }

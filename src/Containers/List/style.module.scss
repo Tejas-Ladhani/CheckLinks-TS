@@ -1,0 +1,28 @@
+.List {
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-top: 1em;
+    box-shadow: 1px 1px 1px rgb(185, 185, 185);
+}
+
+.ListContainer {
+    min-height: 75vh;
+    max-height: 75vh;
+    overflow-y: auto;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+    &::-webkit-scrollbar {
+        width: 9px;
+        height: 12px;
+    }
+
+    &::-webkit-scrollbar-track-piece {
+        background-color: #ffffff;
+    }
+
+    &::-webkit-scrollbar-thumb:vertical {
+        height: 0.6em;
+        background-color: rgb(148, 148, 148);
+        /* opacity: 0.4; */
+    }
+}

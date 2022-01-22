@@ -1,3 +1,9 @@
+.container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 .ListHeader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6,13 +12,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #7a7a7a;
   border: 1px solid #4b4b4b;
-  border-radius: 5px;
+  border-radius: 0px 0px 5px;
   -webkit-box-shadow: 1px 1px 9px 0px #7a7a7a;
           box-shadow: 1px 1px 9px 0px #7a7a7a;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 1em;
   margin-top: 1em;
   margin-bottom: 0.5em;

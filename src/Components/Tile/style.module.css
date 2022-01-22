@@ -24,7 +24,7 @@
 }
 
 .indicatorImage {
-  border: 1px solid #8b8b8b;
+  border: 1px solid #c4c4c4;
   border-radius: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,5 +46,11 @@
 
 .imageContainer {
   margin-right: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  p {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.module.css.map */

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ListHeader, Tile } from '..';
+import { ListHeader, Tile } from '../../Components';
 import axios from 'axios';
 import style from './style.module.css';
 
@@ -8,7 +8,6 @@ export default function List() {
     const temp: {}[] = [];
     const [ListOfChains, setListOfChains] = useState<Array<any>>([]);
 
-    const [count, setCount] = useState(0);
     useEffect(() => {
         axios({
             method: 'get',
@@ -16,7 +15,12 @@ export default function List() {
             headers: {}
         })
             .then(function (response) {
-                console.log(Object.values(response.data));
+                /**
+                 * Fetching the Values from key-value pairs ; using Object.values() - return array of objects
+                 * Iterating through every item of the obtained array & checking , if the "tokenSymbol" & "tokenDecimals" key is present in that particular object item.
+                 * If the keys are present , we are simply pushing/saving it in our variable : temp
+                 * And after the completion ot the iteration, we are saving it in our state.
+                 */
                 Object.values(response.data).map((item: any) => {
                     if ("tokenSymbol" in item && "tokenDecimals" in item)
                         temp.push(item);
@@ -27,7 +31,7 @@ export default function List() {
                 console.log(error);
             });
 
-    }, [count]);
+    }, []);
 
     type itemType = {
         name: string;
@@ -37,7 +41,10 @@ export default function List() {
         tokenDecimals: number;
     }
     return <div className={style.List}>
-        <ListHeader/>
-        {ListOfChains && ListOfChains.map((item: itemType, index) => <Tile key={index} name={item.name} icon={item.icon} />)}
+        <ListHeader />
+        <div className={style.ListContainer}>
+            {/* Mapping the data with Tile Component */}
+            {ListOfChains && ListOfChains.map((item: itemType, index) => <Tile key={index} name={item.name} icon={item.icon} />)}
+        </div>
     </div>;
 }

@@ -1,19 +1,7 @@
-import { AppBar, List } from "./Components";
-import Paper from '@mui/material/Paper';
-import { Box } from "@mui/material";
+import { CheckLinkStatusPage } from "./Pages";
 
 function App() {
-
-  return (
-    <div className="App">
-
-      <AppBar />
-
-        <List />
-      {/* <Paper> */}
-      {/* </Paper> */}
-    </div>
-  );
+  return <CheckLinkStatusPage />;
 }
 
 export default App;
