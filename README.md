@@ -8,7 +8,7 @@
   <p align="center">
 There are many connections to different blockchain networks and in order to always be aware of which ones work, we would like the page with the status of connections.
     <br />
-    <a href="https://reactaagram.web.app/">View Demo</a>
+    <a href="https://tejas-ladhani.github.io/CheckLinks-TS">View Application</a>
     ·
     <a href="https://github.com/Tejas-Ladhani/Reactaagram/issues">Report Bug</a>
     ·
